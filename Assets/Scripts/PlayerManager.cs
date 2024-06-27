@@ -22,7 +22,7 @@ public class PlayerManager : MonoBehaviour
 
     public void ReplayGame()
     {
-        Debug.Log("ReplayGame working!");
-        SceneManager.LoadScene("levels123");
+        Debug.Log("Back to main menu working!");
+        SceneManager.LoadScene("New_menu");
     }
 }
