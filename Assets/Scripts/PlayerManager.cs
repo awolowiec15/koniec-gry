@@ -23,6 +23,7 @@ public class PlayerManager : MonoBehaviour
     public void ReplayGame()
     {
         Debug.Log("Back to main menu working!");
+        AudioManager.instance.Play("click");
         SceneManager.LoadScene("New_menu");
     }
 }

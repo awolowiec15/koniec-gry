@@ -9,6 +9,7 @@ public class PlayerColision : MonoBehaviour
         if(collision.transform.tag == "Diespace")
         {
             PlayerManager.isGameOver = true;
+            AudioManager.instance.Play("GameOver");
             gameObject.SetActive(false);
         }
     }

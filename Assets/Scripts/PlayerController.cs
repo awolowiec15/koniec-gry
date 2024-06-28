@@ -111,6 +111,8 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger(AnimationStrings.jumpTrigger);
             rb.velocity = new Vector2(rb.velocity.x, jumpImpulse);
+
+            AudioManager.instance.Play("Jump");
         }
     }
 

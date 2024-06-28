@@ -6,6 +6,7 @@ public class Teleporter : MonoBehaviour
 
     public Transform GetDestination()
     {
+        AudioManager.instance.Play("teleport");
         return destination;
     }
 }
