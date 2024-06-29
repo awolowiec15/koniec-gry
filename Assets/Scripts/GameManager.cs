@@ -81,6 +81,14 @@ public class GameManager : MonoBehaviour
         {
             scoreText.text = "DIAMENTY: " + DIAMENTY + "/" + maxDiamenty;
         }
+        if (DIAMENTY >= maxDiamenty)
+        {
+            DisplayAllDiamondsCollectedMessage();
+            interactionManager.ShowCompletionMessage();
+
+            // Po zebraniu wszystkich diamentów, przejdŸ do nowej sceny (np. "WinScene")
+            SceneManager.LoadScene("end");
+        }
     }
 
     void DisplayAllDiamondsCollectedMessage()
