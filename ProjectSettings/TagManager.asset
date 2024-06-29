@@ -8,6 +8,7 @@ TagManager:
   - Waypointbettle
   - Teleporter
   - Diespace
+  - ScoreText
   layers:
   - Default
   - TransparentFX
